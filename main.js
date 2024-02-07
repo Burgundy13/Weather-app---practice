@@ -35,7 +35,6 @@ function showWeather(e) {
 }
 
 function displayResult(data) {
-	console.log(data);
 	let date = new Date();
 	let localTime = date.getTime();
 	let localOffset = date.getTimezoneOffset() * 60000;
@@ -120,7 +119,7 @@ function displayResult(data) {
 	day.innerHTML = days[newCity.getDay()];
 	dateYear.innerHTML = `${
 		months[newCity.getMonth()]
-	} ${newCity.getDay()}, ${newCity.getFullYear()}`;
+	} ${newCity.getUTCDate()}, ${newCity.getFullYear()}`;
 
 	time.innerHTML = `${cityHour}: ${cityMinute}h`;
 }
