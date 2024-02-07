@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #33708f;
+	line-height: 1.4;
+	font-size: 16px;
+}
+
+.container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.col-1-2 {
+	width: 50%;
+	padding: 0 15px;
+}
+
+#weather {
+	margin: 30vh auto;
+	text-align: center;
+	color: #fff;
+}
+
+.top {
+	display: flex;
+	background-color: #0d374d;
+	padding: 45px 20px 40px 70px;
+	text-align: left;
+	border-radius: 25px 25px 0 0;
+}
+
+.bottom {
+	margin-top: 2px;
+	background-color: #0d374d;
+	display: flex;
+	text-align: left;
+	border-radius: 0 0 25px 25px;
+}
+
+.bottom .left,
+.bottom .right {
+	width: 50%;
+	padding: 30px 60px 10px;
+}
+
+.bottom .left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+}
+
+.bottom .left p {
+	margin: 0;
+}
+
+p.max__temp {
+	font-size: 15px;
+	margin: 10px 0 5px;
+}
+
+p.min__temp {
+	font-size: 15px;
+	margin: 0;
+}
+
+.bottom .right {
+	border-left: 2px solid #33708f;
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
+}
+
+.bottom .right p {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.city {
+	font-size: 40px;
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+input {
+	max-width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #666;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.2s ease all;
+}
+
+input:focus {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid mediumturquoise;
+}
+
+.day {
+	font-size: 28px;
+	margin-bottom: 0;
+}
+
+.date,
+.time {
+	font-size: 20px;
+	margin: 0;
+}
+
+.weather__status {
+	text-align: center;
+	padding: 5px;
+}
+
+img {
+	width: 70%;
+	display: block;
+	margin: 20px auto;
+}
