@@ -121,5 +121,5 @@ function displayResult(data) {
 		months[newCity.getMonth()]
 	} ${newCity.getUTCDate()}, ${newCity.getFullYear()}`;
 
-	time.innerHTML = `${cityHour}: ${cityMinute}h`;
+	time.innerHTML = `${cityHour}:${cityMinute}h`;
 }
